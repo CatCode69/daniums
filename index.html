@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daniums - Superior Learning</title>
+    <link rel="icon" type="image/svg+xml" href="images/open-book.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/normalize.css" />
+    <link rel="stylesheet" href="CSS/index.css" />
+  </head>
+  <body>
+    <div class="topnav persian" id="myTopnav">
+      <a href="#home" class="active">خانه</a>
+      <a href="signup.html">ثبت نام اشتراک ویژه</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
+
+    <main class="container">
+      <section class="card-block">
+        <a href="https://dl.daniums.ir" target="-blank">
+          <div class="card">
+            <img
+              src="images/resources.webp"
+              class="card__cover"
+              alt="Book Cover"
+            />
+            <p class="card__title">Study Assistant</p>
+            <p class="card__description">Recordings, Homework and etc.</p>
+          </div>
+        </a>
+      </section>
+      <section class="card-block">
+        <a href="nand.html" target="-blank">
+          <div class="card">
+            <img
+              src="images/pmtmt-1.webp"
+              class="card__cover"
+              alt="Book Cover"
+            />
+            <p class="card__title">Psychology Mid-term Mock Test</p>
+            <p class="card__description persian">
+              آزمون تمرینی میان ترم اختلالات روان
+              <br />
+              (Soon)
+            </p>
+          </div>
+        </a>
+      </section>
+    </main>
+  </body>
+</html>
