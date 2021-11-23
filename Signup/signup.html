@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="../images/open-book.svg" />
+    <title>ثبت نام اشتراک</title>
+    <style>
+      *,
+      *::after,
+      *::before {
+        font-family: "iransansx";
+      }
+      body,
+      html {
+        font-size: 1.1rem;
+        height: 100vh;
+        font-family: "iransansx";
+        background: url(../images/protruding-squares.svg);
+      }
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        grid-template-rows: 100vh;
+        grid-template-columns: 50vw 50vw;
+        justify-items: center;
+        align-items: center;
+        justify-content: space-around;
+        align-content: center;
+      }
+      .picture-container {
+        margin: 1rem;
+        margin-right: 0;
+      }
+      img {
+        border-radius: 20px;
+      }
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 0.3rem;
+      }
+      .formgroup {
+        margin-bottom: 1rem;
+      }
+      input {
+        font-size: 1.1rem;
+        width: 50vw;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 0.5rem 0.7rem;
+        transition: border-color 0.15s, box-shadow 0.15s;
+        width: 600px;
+      }
+      input:focus {
+        outline: 0;
+        border-color: aqua;
+        box-shadow: 0 0 0 4px rgba(24, 117, 255, 0.25);
+      }
+      button {
+        background: #0d6efd;
+        color: #fff;
+        border: 0;
+        font-family: iransans;
+        padding: 0.5rem 0.7rem;
+        border-radius: 5px;
+        outline: 0;
+        margin: 0 auto;
+        display: block;
+        font-weight: bold;
+        font-size: 0.9rem;
+      }
+      #form {
+        direction: rtl;
+        background: hsl(19, 74%, 55%);
+        padding: 1rem;
+        border-radius: 10px;
+        width: auto;
+        border: 5px double hsl(196, 100%, 77%);
+      }
+
+      @media screen and (max-width: 1080px) {
+        .container {
+          display: flex;
+          flex-direction: column-reverse;
+          justify-items: center !important;
+          align-items: center !important;
+          justify-content: center !important;
+          align-content: center !important;
+        }
+        #form {
+          width: auto;
+          margin: 0 auto;
+        }
+
+        input {
+          width: auto !important;
+          margin: 0 auto;
+          display: block;
+          border: 1px solid #ccc;
+          border-radius: 5px;
+          padding: 0.5rem 0.7rem;
+          transition: border-color 0.15s, box-shadow 0.15s;
+          width: 600px;
+        }
+        img {
+          width: 80% !important;
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 1rem;
+          margin-top: 1rem;
+        }
+        .picture-container {
+          margin: auto;
+          margin-right: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="form">
+        <form
+          action="https://submit-form.com/mqy2lPza"
+          id="waterform"
+          method="post"
+        >
+          <input
+            type="hidden"
+            name="_redirect"
+            value="http://daniumssub.ir.page"
+          />
+          <div class="formgroup" id="name-form">
+            <label for="name">نام و نام خانوادگی</label>
+            <input type="text" id="name" name="name" required maxlength="90" />
+          </div>
+
+          <div class="formgroup" id="email-form">
+            <label for="email">ایمیل</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              maxlength="90"
+            />
+          </div>
+          <div class="formgroup" id="email-form">
+            <label for="username">نام کاربری</label>
+            <input
+              type="text"
+              id="username"
+              name="username"
+              required
+              maxlength="90"
+            />
+          </div>
+          <div class="formgroup" id="email-form">
+            <label for="password">رمز عبور</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              required
+              maxlength="90"
+            />
+          </div>
+          <button type="submit">تأیید و پرداخت</button>
+        </form>
+      </div>
+      <picture class="picture-container">
+        <source media="(min-width: 1081px)" srcset="images/sub_1.gif" />
+        <source media="(max-width: 1080px)" srcset="images/sub_2.gif" />
+        <img src="images/photo-small.jpg" />
+      </picture>
+    </div>
+  </body>
+</html>
