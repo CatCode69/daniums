@@ -13,7 +13,11 @@
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black" />
     <meta name="msapplication-tap-highlight" content="no" />
-    <link rel="icon" type="image/svg+xml" href="../../../images/open-book.svg" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="../../../images/open-book.svg"
+    />
     <title>Psychology Quiz</title>
     <link rel="apple-touch-icon-precomposed" href="data/apple-touch-icon.png" />
     <link rel="shortcut icon" type="image/ico" href="data/favicon.ico" />
@@ -39,6 +43,19 @@
       p {
         direction: rtl !important;
         text-align: center !important;
+        font-family: "iransans" !important;
+      }
+      p span {
+        color: black !important;
+      }
+
+      .choice-view__active-element.choice-view__active-element_correct::before {
+        z-index: 1 !important;
+        right: -11px !important;
+      }
+
+      .player-shape-view__shape-view-rich-text-view.player-shape-view__shape-view-rich-text-view_wrap-text {
+        direction: ltr;
       }
       body {
         width: 100%;
